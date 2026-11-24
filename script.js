@@ -1,4 +1,4 @@
-const API_URL = 'https://eventos-backend-zcsx.onrender.com/';
+const API_URL = 'https://eventos-backend-zcsx.onrender.com/eventos';
 
 const form = document.getElementById('form-evento');
 const listaEventos = document.getElementById('lista-eventos');
