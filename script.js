@@ -15,13 +15,13 @@ async function carregarEventos() {
       card.className = 'card-evento';
       card.innerHTML = `
         <h3>${evento.titulo}</h3>
-        <p>${evento.descricao || 'Sem descrição'}</p>
+        <p>${evento.descricao || 'Sem descriÃ§Ã£o'}</p>
         <p><strong>Data:</strong> ${evento.data_evento} | <strong>Local:</strong> ${evento.local}</p>
       `;
       listaEventos.appendChild(card);
     });
   } catch (erro) {
-    listaEventos.innerHTML = '<p>Erro ao carregar eventos. Aguarde o servidor do Render iniciar e recarregue a página.</p>';
+    listaEventos.innerHTML = '<p>Erro ao carregar eventos. Aguarde o servidor do Render iniciar e recarregue a pagina.</p>';
     console.error(erro);
   }
 }
@@ -50,7 +50,7 @@ form.addEventListener('submit', async (e) => {
       alert('Erro ao cadastrar evento.');
     }
   } catch (erro) {
-    alert('Erro de conexão com o servidor.');
+    alert('Erro de conexao com o servidor.');
     console.error(erro);
   }
 });
